@@ -873,7 +873,7 @@ function openMeetingPhoto(src){
 .attendanceTwoMonth{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.twoMonthHead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.twoMonthRow{display:grid;grid-template-columns:minmax(180px,1fr) 80px;gap:10px;align-items:center;margin:7px 0}
 .memberPopupOverlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(15,23,42,.55);z-index:99999}.memberPopupCard{width:min(520px,94vw);max-height:88vh;overflow:auto;background:var(--card);color:var(--text);border-radius:20px;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.3)}.memberPopupHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.memberPopupHead h2{margin:3px 0 0}.memberPopupClose{border:0;background:transparent;font-size:22px;cursor:pointer;color:inherit}.memberPopupGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.memberPopupStat{padding:16px;border-radius:14px;background:linear-gradient(135deg,#f7f9fc,#eef3f9);border:1px solid var(--line)}.memberPopupStat small{display:block;opacity:.7;margin-bottom:5px}.memberPopupStat strong{font-size:22px}
 @media(max-width:700px){.home-risk-row{grid-template-columns:1fr 70px}.memberPopupGrid{grid-template-columns:1fr}}
-</style></head><body><img src="${src}" alt="Sunday Meeting Photo"><script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));}</script></body></html>`);
+</style></head><body><img src="${src}" alt="Sunday Meeting Photo"></body></html>`);
 }
 
 function renderAll(){const selected=document.querySelector(".memberRow.selectable.selected")?.dataset.member;renderHome();renderAttendance();renderMembers(selected);renderCollections();renderFine();renderReports();renderAdmin()}
@@ -907,4 +907,11 @@ initTheme();
 
 
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+  });
+}
+</script>
 </body></html>
