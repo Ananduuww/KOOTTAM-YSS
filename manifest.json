@@ -2,9 +2,9 @@
   "name": "KOOTTAM YSS",
   "short_name": "KOOTTAM",
   "description": "KOOTTAM YSS Sunday Yogam Management",
-  "id": "./",
-  "start_url": "./index.html",
-  "scope": "./",
+  "id": "/KOOTTAM-YSS/",
+  "start_url": "/KOOTTAM-YSS/",
+  "scope": "/KOOTTAM-YSS/",
   "display": "standalone",
   "background_color": "#f5f5f5",
   "theme_color": "#111111",
@@ -34,5 +34,10 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "prefer_related_applications": false
 }

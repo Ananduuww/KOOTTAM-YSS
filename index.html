@@ -371,9 +371,9 @@ body.dark .upload-box{background:#191919!important;border-color:#444!important}
 body.dark .memberPopupStat{background:#202020!important;border-color:#333!important}
 </style>
 
-<meta name="theme-color" content="#111111"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="manifest" href="./manifest.json">
-<link rel="icon" type="image/png" sizes="64x64" href="./icons/favicon-64.png">
-<link rel="apple-touch-icon" sizes="192x192" href="./icons/icon-192.png">
+<meta name="theme-color" content="#111111"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="manifest" href="/KOOTTAM-YSS/manifest.json">
+<link rel="icon" type="image/png" sizes="64x64" href="/KOOTTAM-YSS/icons/favicon-64.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/KOOTTAM-YSS/icons/icon-192.png">
 <meta name="theme-color" content="#111111">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -917,7 +917,7 @@ initTheme();
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+    navigator.serviceWorker.register("/KOOTTAM-YSS/service-worker.js", {scope:"/KOOTTAM-YSS/"}).catch(() => {});
   });
 }
 </script>
